@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+  background-color: transparent !important;
+}
+
+/*________________________________this is the main Header (Stafford Township, NJ & Logo)_______________________________________*/
+
+/* Header styling */
+
+header {
+  background-color: #3d5857;
+  color: black;
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Logo positioning */
+.header-seal {
+  position: fixed;         /* Makes it stay on screen */
+  top: 4.5%;
+  left: 5%;
+  transform: translate(-50%, -30%);
+  z-index: 502; /* sits behind nav */
+  pointer-events: none; /* doesn’t block mouse hover */
+
+}
+.header-seal img {
+  width: 120px; /* Adjust as needed */
+  height: auto;
+  max-width: 100%;
+}
+
+/*____________________________________________NAV MENU_______________________________________________*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;                /* Keeps it full-width */
+  z-index: 500;
+  background-color: #3D5857;  /* Match your header/nav color */
+  display: flex;
+  justify-content: flex-end;  /* Aligns nav items to the right */
+  padding: 10px 20px;         /* Optional: add some breathing room */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Optional shadow */
+
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav .menu > li {
+  display: flex;
+  align-items: center;     /* vertical centering */
+  position: relative;
+  height: 100%;
+  padding-bottom: 0px; /* Extends hover area to reach dropdown */
+
+}
+
+nav .menu > li > a {
+  display: inline-block;
+  vertical-align: middle; 
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+
+}
+
+/* Underline animation */
+nav .menu > li > a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav .menu > li > a:hover::after {
+  width: 100%;
+
+}
+
+/* Dropdown Content */
+
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 30px;               /* height of the invisible buffer */
+  width: 100%;
+  background: transparent;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(125% - 1px);   /* Aligns dropdown with bottom of nav */
+  right: 0;
+  background-color: white;
+  border: 1px solid black;
+  min-width: 300px;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  font-size: .8em;
+  opacity: 0;                      /* start hidden */
+  transform: translateY(20px);     /* start pushed down */
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.dropdown-content li a:hover {
+  background-color: #999a9b;
+}
+
+/* When dropdown is hovered */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* _________________________NESTED DROPDOWN STYLES__________________________ */
+
+.nested-dropdown {
+  position: relative;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  border: 1px solid black;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  z-index: 1001;
+  list-style: none;
+}
+
+.nested-dropdown-content li a {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.nested-dropdown-content li a:hover {
+  background-color: #999a9b;
+}
+
+/* Show nested dropdown on hover */
+.nested-dropdown:hover .nested-dropdown-content {
+  display: block;
+}
+
+/* Flip nested menu to the left if needed */
+.flip-left .nested-dropdown-content {
+  left: auto;
+  right: 100%;
+
+}
+/*______________________Search Bar___________________________*/
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.nav-search input[type="text"] {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.nav-search button {
+  padding: 8px 10px;
+  font-size: 2;
+  background-color: clear;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-search button:hover {
+  background-color: #0055aa;
+}
+
+
+/*================= Full-Bleed Hero Banner Image =================*/
+
+.hero-banner {
+  position: relative; 
+  width: 100%;
+  height: 910px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* 🔒 keeps it in place */
+  background-repeat: no-repeat;
+  z-index: -1000; /* Ensures it stays behind other content */
+  margin-top: 25px;  /* adjust for fixed nav height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  position: relative;  /* <– allows content to scroll with page */
+  z-index: 2;
+}
+
+.overlay-logo {
+  width: 200px;         /* Adjust logo size */
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.welcome-message {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 10px 10px 20px #202222; /* black */
+  margin: 25
+}
+
+/*______________________Hotkey Grid Section___________________________*/
+
+.hotkey-section {
+  background-color: #3d585700;
+  padding: 0px 0;
+  width: 100%;
+  color: white;
+}
+
+.hotkey-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.hotkey-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.hotkey-box {
+  background-color: #3D5857;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hotkey-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hotkey-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/*______________________Test Bar___________________________*/
+
+ 
+
+/*______________________This is the Body of main page___________________________*/
+
+.main {
+  background-color: transparent;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0); /* optional: ensures text is visible on dark background */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: rgba(255, 255, 255, 0); /* optional: ensures text is visible on dark background */
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}

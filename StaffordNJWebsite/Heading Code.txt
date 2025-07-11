@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stafford Township</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER: Logo + Title + Navigation ===== -->
+
+<header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+
+      <!-- How Do I... -->
+      <li class="dropdown">
+        <a href="#">How Do I... &#9662;</a>
+        <ul class="dropdown-content">
+        
+          <li class="nested-dropdown flip-left">
+            <a href="#">Find... &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">Council Meeting Videos</a></li>
+              <li><a href="#">Flood Information</a></li>
+              <li><a href="#">Municipal Meeting Dates</a></li>
+              <li><a href="#">Recreation Programs</a></li>
+              <li><a href="#">Recycling & Trash Schedule</a></li>
+              <li><a href="#">Tax Payment Due Date</a></li>
+              <li><a href="#">Tax Sale Information</a></li>
+              <li><a href="#">Township Code Book</a></li>
+              <li><a href="#">Township Municipal Budget</a></li>
+              <li><a href="#">Zoning Information</a></li>           
+           </ul>
+          </li>
+
+          <li class="nested-dropdown flip-left">
+            <a href="#">Sign Up For... &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">Arbor Day Contest</a></li>
+              <li><a href="#">Crash Reports</a></li>
+              <li><a href="#">Food / Shelter Assistance</a></li>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="#">Water & Sewer Service</a></li>
+            </ul>
+          </li>
+
+          <li><a href="https://www.atlanticcityelectric.com/Pages/ReportStreetLightOutage.aspx">Report a Street Outage</a></li>
+          <li><a href="#">Tax Bill Inquiry</a></li>
+          <li><a href="#">Change My Mailing Address</a></li>
+        </ul>
+      </li>
+
+      <!-- Government -->
+      <li class="dropdown">
+        <a href="#">Government &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Agendas & Minutes</a></li>
+          <li><a href="#">Resolutions & Ordinances</a></li>
+          <li><a href="#">Mayor and Council</a></li>
+
+          <li class="nested-dropdown flip-left">
+            <a href="#">Boards & Commissions &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">Planning Board</a></li>
+              <li><a href="#">Zoning Board of Adjustment</a></li>
+              <li><a href="#">Environmental Commission</a></li>
+              <li><a href="#">Historic Preservation Commission</a></li>
+              <li><a href="#">Green Team</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Government Related Links</a></li>
+          <li><a href="#">Township Code Book</a></li>
+          <li><a href="#">Town Council Meetings & Mayor's Forum Videos</a></li>
+        </ul>
+      </li>
+
+      <!-- Community -->
+      <li class="dropdown">
+        <a href="#">Community &#9662;</a>
+        <ul class="dropdown-content">
+          <li class="nested-dropdown flip-left">
+            <a href="#">Community Events & Resources &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">Calendars</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Emergency Resources</a></li>
+              <li><a href="#">Hurricane Sandy</a></li>
+              <li><a href="#">Manahawkin Weather</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Parks & Facilities</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Stafford Township Arts Center (STAC)</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Business Directory</a></li>
+
+          <li class="nested-dropdown flip-left">
+            <a href="#">History & Local Interest &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">History of Stafford Township</a></li>
+              <li><a href="#">Local Interest Links</a></li>
+            </ul>
+          </li>
+
+          <li class="nested-dropdown flip-left">
+            <a href="#">Social Services &#9656;</a>
+            <ul class="nested-dropdown-content">
+              <li><a href="#">Community Outreach</a></li>
+              <li><a href="#">Health & Senior Services</a></li>
+              <li><a href="#">Ocean County Health Department</a></li>
+              <li><a href="#">Service Request Form</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Stafford Township Lagoon Study Workshop</a></li>
+          <li><a href="#">Stafford Police Fact Sheet</a></li>
+        </ul>
+      </li>
+
+      <!-- Services -->
+      <li class="dropdown">
+        <a href="#">Services &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Affordable Housing & Home Improvement Program</a></li>
+          <li><a href="#">Emergency Notification System</a></li>
+          <li><a href="#">Report a Concern</a></li>
+          <li><a href="#">Report a Street Light Outage</a></li>
+          <li><a href="#">Health & Senior Services</a></li>
+          <li><a href="#">Dial-A-Ride</a></li>
+          <li><a href="#">Adopt-A-Tree</a></li>
+        </ul>
+      </li>
+
+      <!-- Departments -->
+      <li class="dropdown">
+        <a href="#">Departments &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Administration</a></li>
+          <li><a href="#">Animal Control</a></li>
+          <li><a href="#">Building Department</a></li>
+          <li><a href="#">Community Development/Zoning Department</a></li>
+          <li><a href="#">Emergency Management</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Fire Prevention</a></li>
+          <li><a href="#">Human Resources</a></li>
+          <li><a href="#">Municipal Clerk</a></li>
+          <li><a href="#">Municipal Court</a></li>
+          <li><a href="#">Police</a></li>
+          <li><a href="#">Public Works</a></li>
+          <li><a href="#">Purchasing</a></li>
+          <li><a href="#">Recreation</a></li>
+          <li><a href="#">Tax Assessor</a></li>
+          <li><a href="#">Tax Collector</a></li>
+          <li><a href="#">Water & Sewer</a></li>
+        </ul>
+      </li>
+
+  <!-- ======================== Search Bar ============================= -->
+
+ <div class="nav-search">
+    <input type="text" placeholder="Search..." aria-label="Search site" />  <!-- ======================== Accessibility Feature?============================= -->
+    <button type="submit">🔍</button>
+  </div>
+</nav>
+
+    </ul>
+  </nav>
+
+</header>
+
+  <!-- ===== OPTIONAL: Overlapping seal image (between header and content) ===== -->
+  <div class="header-seal">
+    <img src="images/Stafford Logo.png" alt="Stafford Township Logo">
+  </div>
+
+
+
+  <main>
+    <!-- Your main page content goes here -->
+    <p>Welcome to Stafford Township's official website!</p>
+  </main>
+
+</body>
+</html>
+
+
+
+
+</header>
+
+  <section class="hero">
+    <h2>Stafford Township, NJ</h2>
+    <p>WELCOME TO A GROWING TOWNSHIP WITH THAT SMALL TOWN FEEL</p>
+    <a href="contact us.html" class="cta">Contact Us</a>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>Stafford Township is located in Ocean County and is known as the Gateway to LBI</p>
+  </section>
+
+  <section id="services">
+    <h3>Quick Links</h3>
+    <ul>
+      <a href="https://staffordnj.mapgeo.io/" class="cta">Area Maps</a>
+      <p><a href="https://www.staffordnj.gov/CivicAlerts.aspx?CID=8>" class="cta">News & Spotlites</a>
+      <p><a href="https://www.staffordnj.gov/197/Public-Works" class="cta">Trash & Recycling</a>
+
+
+<!-- Saving for Reference The Below. PS the &nbsp is a blank space -->
+     
+<p>&nbsp;</p>
+     <li>News & Spotlights</li>
+      <li>Trash and Recycling</li>
+    </ul>
+  </section>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+
+}
+
+/*________________________________this is the main Header (Stafford Township, NJ & Logo)_______________________________________*/
+
+/* Header styling */
+
+header {
+  background-color: #3D5857;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  justify-content: space-between; /* pushes nav to the right */
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+
+h1 {
+  font-family: 'Edwardian Script ITC', serif;
+  font-size: 5em;
+  text-align: left;
+  margin: 10;
+}
+
+/* Logo positioning */
+.header-seal {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -30%);
+  z-index: 1; /* sits behind nav */
+  pointer-events: none; /* doesn’t block mouse hover */
+
+}
+
+.header-seal img {
+  width: 120px; /* Adjust as needed */
+  height: auto;
+  max-width: 100%;
+}
+
+/*MAIN BACKGROUND & CENTER FONT*/
+
+header {
+  background-color: #3D5857;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding img {
+  margin-right: 15px;
+}
+
+/*____________________________________________NAV MENU_______________________________________________*/
+
+nav {
+  margin-left: auto;
+  font-size: 1.2em;
+  z-index: 2;
+  position: relative;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav .menu > li {
+  display: flex;
+  align-items: center;     /* vertical centering */
+  position: relative;
+  height: 100%;
+  padding-bottom: 0px; /* Extends hover area to reach dropdown */
+
+}
+
+nav .menu > li > a {
+  display: inline-block;
+  vertical-align: middle; 
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+
+}
+
+/* Underline animation */
+nav .menu > li > a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav .menu > li > a:hover::after {
+  width: 100%;
+
+}
+
+/* Dropdown Content */
+
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 30px;               /* height of the invisible buffer */
+  width: 100%;
+  background: transparent;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(130% - 1px);   /* Aligns dropdown with bottom of nav */
+  right: 0;
+  background-color: white;
+  border: 1px solid black;
+  min-width: 350px;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  font-size: .8em;
+  opacity: 0;                      /* start hidden */
+  transform: translateY(20px);     /* start pushed down */
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.dropdown-content li a:hover {
+  background-color: #0055aa;
+}
+
+/* When dropdown is hovered */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+
+}
+
+/* _________________________NESTED DROPDOWN STYLES__________________________ */
+
+.nested-dropdown {
+  position: relative;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  border: 1px solid black;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  z-index: 1001;
+  list-style: none;
+}
+
+.nested-dropdown-content li a {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.nested-dropdown-content li a:hover {
+  background-color: #0055aa;
+}
+
+/* Show nested dropdown on hover */
+.nested-dropdown:hover .nested-dropdown-content {
+  display: block;
+}
+
+/* Flip nested menu to the left if needed */
+.flip-left .nested-dropdown-content {
+  left: auto;
+  right: 100%;
+
+}
+/*______________________Search Bard___________________________*/
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.nav-search input[type="text"] {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.nav-search button {
+  padding: 8px 10px;
+  font-size: 2;
+  background-color: clear;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-search button:hover {
+  background-color: #0055aa;
+}
+
+/*______________________This Makes the Nav Menu Mobile Friendly___________________________*/
+
+@media (max-width: 768px) {
+  nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav .menu > li {
+    width: 100%;
+  }
+
+  nav .menu > li > a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border-top: 1px solid #ccc;
+  }
+
+  /* Optional: Make dropdowns expand full-width on mobile */
+  .dropdown-content {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    border: none;
+    box-shadow: none;
+    padding-left: 10px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
